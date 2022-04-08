@@ -573,6 +573,7 @@ defmodule Gringotts.Gateways.AuthorizeNet do
       add_payment_source(payment),
       add_invoice(opts),
       add_customer_id(opts),
+      add_billing_info(opts),
       add_shipping_info(opts)
     ])
   end
