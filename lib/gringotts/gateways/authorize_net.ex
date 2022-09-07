@@ -33,6 +33,7 @@ defmodule Gringotts.Gateways.AuthorizeNet do
   | `ref_id`              |
   | `tax`                 |
   | `duty`                |
+  | `tip`                 |
   | `shipping`            |
   | `po_number`           |
   | `customer_type`       |
