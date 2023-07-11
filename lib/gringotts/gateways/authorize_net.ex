@@ -557,7 +557,6 @@ defmodule Gringotts.Gateways.AuthorizeNet do
       add_transaction_type(transaction_type),
       add_amount(amount),
       add_payment_source(payment),
-      add_tip(opts),
       add_invoice(opts),
       add_tax_fields(opts),
       add_duty_fields(opts),
@@ -573,7 +572,6 @@ defmodule Gringotts.Gateways.AuthorizeNet do
       add_transaction_type(transaction_type),
       add_amount(amount),
       add_payment_source(payment),
-      add_tip(opts),
       add_invoice(opts),
       add_customer_id(opts),
       add_shipping_info(opts)
@@ -626,13 +624,6 @@ defmodule Gringotts.Gateways.AuthorizeNet do
 
   defp add_payment_source(source) do
     add_customer_payment_profile_info(source)
-  end
-
-  defp add_tip(opts) do
-    if opts[:tip] do
-      {_, value} = opts[:tip] |> Money.to_string()
-      element(:tip, value)
-    end
   end
 
   defp add_credit_card(source) do
