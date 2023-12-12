@@ -48,7 +48,7 @@ defmodule Gringotts.Mixfile do
       {:hackney, "~> 1.9"},
       {:xml_builder, "~> 2.1"},
       {:elixir_xml_to_map, "~> 0.1"},
-      {:decimal, "~> 1.5"},
+      {:decimal, "~> 2.1.1"},
       {:mock, "~> 0.3.0", only: :test},
     ]
   end
