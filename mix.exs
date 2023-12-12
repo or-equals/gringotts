@@ -44,7 +44,7 @@ defmodule Gringotts.Mixfile do
   # Type `mix help deps` for more examples and options
   defp deps do
     [
-      {:httpoison, "~> 1.1"},
+      {:httpoison, "~> 2.0"},
       {:hackney, "~> 1.9"},
       {:xml_builder, "~> 2.1"},
       {:elixir_xml_to_map, "~> 0.1"},
